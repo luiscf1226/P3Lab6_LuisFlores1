@@ -3,14 +3,16 @@
 #include<string>
 #include<iostream>
 #include<vector>
-#include "asiento.hpp"
 using namespace std;
-class carro {
+class genero {
   private:
   string nombre;
   public:
   genero();
   genero (string);
-  ~genero();  
+  ~genero();
+  string getNombre();
+  void setNombre(string);
+  string toString();  
 };
 #endif
