@@ -2,11 +2,16 @@
 canciones::canciones(){
 	
 }
-canciones::canciones(string n,string a, string d, genero g){
+canciones::canciones(string n,string a, string d, genero *g){
 	this->nombre=n;
 	this->artista=a;
 	this->duracion=d;
 	this->gen=g;
+}
+canciones::canciones(string n,string a,string d){
+	this->nombre=n;
+	this->artista=a;
+	this->duracion=d;
 }
 canciones::~canciones(){
 	
@@ -30,9 +35,9 @@ string canciones::getDuracion(){
 void canciones::setDuracion(string d){
 	this->duracion=d;
 }
-genero canciones::getGenero(){
+genero* canciones::getGenero(){
 	return this->gen;
 }
-void canciones::setGenero(genero g){
+void canciones::setGenero(genero *g){
 	this->gen=g;
 }

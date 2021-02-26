@@ -9,10 +9,11 @@ class canciones {
   string nombre;
   string artista;
   string duracion;
-  genero gen;	
+  genero *gen;	
   public:
   canciones();
-  canciones(string,string,string,genero);
+  canciones(string,string,string,genero*);
+  canciones(string,string,string);
   ~canciones();
   string getNombre();
   void setNombre(string);
@@ -20,7 +21,7 @@ class canciones {
   void setArtista(string);
   string getDuracion();
   void setDuracion(string);
-  genero getGenero();
-  void setGenero(genero);
+  genero* getGenero();
+  void setGenero(genero*);
 };
 #endif
