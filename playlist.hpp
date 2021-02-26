@@ -8,11 +8,13 @@ using namespace std;
 class playlist {
   private:
   string nombre;
+  
   vector<canciones*> listacan;
   public:
   playlist();
   playlist(string);
   ~playlist();
+
   string getNombre();
   void setNombre(string);
   vector <canciones*> getCanciones();
